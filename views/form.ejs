@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/express-app/ex-app/public/stylesheets/style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>色を混ぜる</h3>
+      <p class="content"><%- content %></p>
+      <form action="/form/post" method="POST">
+        <div class="form-group">
+          <input
+            type="text"
+            name="color1"
+            class="form-control"
+            id="color1"
+            placeholder="input color Code"
+          />
+          <input
+          type="text"
+          name="color2"
+          class="form-control"
+          id="color2"
+          placeholder="input color Code"
+        />
+        </div>
+        <input type="submit" value="送信" class="btn btn-primary" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/express-app/ex-app/public/stylesheets/style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>色を混ぜる</h3>
+      <p class="content"><%- content %></p>
+      <div class="color1" style="color: <%- color1 %>;">■<%- color1 %></div>
+      <div class="color2" style="color: <%- color2 %>;">■<%- color2 %></div>
+      <div class="color2" style="color: <%- mixed %>;">■<%- mixed %></div>
+    </div>
+  </body>
+</html>
